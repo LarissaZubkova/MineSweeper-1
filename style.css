@@ -16,13 +16,14 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px;
+    width: 304px;
 }
 
 .display {
     background-color: black;
     color: red;
     padding: 5px 10px;
-    height: 19px;
+    height: 17px;
 }
 
 .start-btn {
@@ -36,7 +37,6 @@
 
 main {
     display: flex;
-    text-align: center;
 }
 
 .field {
@@ -44,4 +44,15 @@ main {
     width: 17px;
     background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
     background-position: 0 -50px;
+    border: 1px solid rgb(104, 104, 104);
+}
+
+.field:active {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -100px;
+}
+
+.field.bomb {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -102px -50px;
 }
