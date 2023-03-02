@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 219, 219);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.display {
+    background-color: black;
+    color: red;
+    padding: 5px 10px;
+    height: 19px;
+}
+
+.start-btn {
+    border: 1px solid rgb(104, 104, 104);
+    padding: 3px;
+    width: 19px;
+    height: 19px;
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -25px;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+.field {
+    height: 17px;
+    width: 17px;
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -50px;
+}
