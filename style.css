@@ -4,19 +4,41 @@
     background-color: rgb(219, 219, 219);
 }
 
+body {
+    width: 300px;
+    height: 365px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #c2c2c2a9;
+    padding: 5px;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: #999;
+    border-bottom-color: #999;
+    border-left-color: white;
+    border-top-color: white;
+}
+
 .game {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
 }
 
 .header-menu {
+    background: #c0c0c0;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: #7b7b7b;
+    border-top-color: #7b7b7b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px;
-    width: 304px;
+    width: 274px;
 }
 
 .display {
@@ -32,10 +54,32 @@
     width: 19px;
     height: 19px;
     background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
-    background-position: 0 -25px;
+    background-position: -1px -25px;
+}
+
+.start-btn.amaze {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -55px -25px;
+}
+
+.start-btn.loose {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -109px -25px;
+}
+
+.start-btn.win {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -82px -25px;
 }
 
 main {
+    margin-top: 16px;
+    border-width: 3px;
+    border-style: solid;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: #7b7b7b;
+    border-top-color: #7b7b7b;
     display: flex;
 }
 
@@ -55,4 +99,49 @@ main {
 .field.bomb {
     background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
     background-position: -102px -50px;
+}
+
+.field.count-0 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -100px;
+}
+
+.field.count-1 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: 0 -68px;
+}
+
+.field.count-2 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -17px -68px;
+}
+
+.field.count-3 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -34px -68px;
+}
+
+.field.count-4 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -51px -68px;
+}
+
+.field.count-5 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -69px -68px;
+}
+
+.field.count-6 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -86px -68px;
+}
+
+.field.count-7 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -102px -68px;
+}
+
+.field.count-8 {
+    background: url(minesweeper-sprites_9TPZzv3.png) no-repeat;
+    background-position: -119px -68px;
 }
