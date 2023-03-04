@@ -18,6 +18,7 @@ function resetGame() {
     bombs = [];
     bombLoose = '';
     closedCellsCount = WIDTH * HEIGHT;
+    bombsCountOnField = BOMB_COUNT;
     boardElement.innerHTML = '';
     resetTimerDisplay();
     startBtnElement.classList.remove('win', 'loose');
@@ -85,6 +86,7 @@ function startClickHandler() {
 function contextmenuHendler(evt) {
     evt.preventDefault();
     const cell = evt.target;
+    console.log(cell)
     cell.removeAttribute('disabled');
     
     if (cell.classList.contains('flag')) {
@@ -97,10 +99,12 @@ function contextmenuHendler(evt) {
       
     } else {
         if (bombsCountOnField <= 0) return;
+        if (cell.classList.contains('opened')) return;
+
         cell.classList.add('flag');
 
         bombsCountOnField--;
-
+        console.log(bombsCountOnField)
         cell.setAttribute('disabled', 'disabled');  
     }
     setBombsDisplay(bombsCountOnField);
@@ -115,6 +119,7 @@ function openField(row, column) {
     if (cell.getAttribute('disabled') === 'disabled') return;
     
     cell.setAttribute('disabled', 'disabled');
+    cell.classList.add('opened');
     if (isBomb(row, column)) {
          startBtnElement.classList.add('loose');
          stopTimer();
